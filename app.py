@@ -1,4 +1,4 @@
-
+import math
 #? declare a variable 
 age = 20
 price = 19.95
@@ -46,6 +46,8 @@ str()
 
 # x = 10 + 3 * 2 #16, it follows the math rules
 # y = (10 + 3) * 2 #26
+
+# print( 10 // 3) #3, rounding
 
 #? comparison operators
 # x = 3 > 2 #True
@@ -125,5 +127,55 @@ numbers = range(5, 10, 2)
 #? tuple: it is like a list but it is not mutable 
 numbers = (1, 1, 2, 3)
 
-print(numbers.count(1))
+# print(numbers.count(1))
 
+
+#? string
+course = '''
+Hi John,
+
+Here is our first email to you.
+
+Thank you,
+Josh
+'''
+# print(course)
+
+#? a copy of the course
+another = course[:]
+# print(another)
+
+
+#? formatted string
+first = "John"
+last = "Smith"
+message = f"{first} [{last}] is a coder"
+# print(message)
+
+
+#? string method
+course = 'Python for Beginners'
+# print(len(course))
+# print(course.upper(), course.lower())
+# print(course.find(' '))
+# print(course.replace('Beginners', 'Absolute Beginners'))
+# print("python" in course)
+
+#? Math functions
+x = 2.9
+# print(round(x))
+# print(abs(-2.9))
+# print(math.ceil(2.9))
+# print(math.floor(2.9))
+
+
+#! exercise
+# house_price = 1000000
+# credit = 'ok'
+# if credit == 'good':
+#     print(type(house_price))
+#     price = house_price / 10
+#     print(f'you need to put down ${price}')
+# else:
+#     price = house_price/5
+#     print(f'You need to put down ${price}')
