@@ -36,5 +36,5 @@ def asterisk_function(a,b, c = True, d = False):
     pass
 #the "*" helps identify the 1 and 2 as two elements
 # the seond "**" indicates the value of the dictionary, "*" indicates the key of the dictionary 
-asterisk_function(*[1,2], **{"c": "hello", "d": "cool"})
+# asterisk_function(*[1,2], **{"c": "hello", "d": "cool"})
     
