@@ -179,3 +179,131 @@ x = 2.9
 # else:
 #     price = house_price/5
 #     print(f'You need to put down ${price}')
+
+#? conditions
+# has_high_income = False
+# has_good_credit = True
+# if has_high_income or has_good_credit:
+#     print("Eligible for loan")
+
+#? comparison
+# name = "Jo"
+# if len(name) < 3:
+#     print("name must be at least 3 characters")
+# elif len(name) > 50:
+#     print("name is too long")
+# else:
+#     print("Name looks good!")
+
+#? while loops
+# secret_number = 9
+# i = 0
+# while i < 3:
+#     guess = int(input("guess your number >> "))
+#     i += 1
+#     if guess == secret_number:
+#         print("you got the secret number!")
+#         break
+    
+# else:
+#     print("you failed")
+
+#! exercise
+# user_response = ""
+# last_response = ""
+# while True:
+#     print("Please enter your choice: start, stop or quit")
+#     user_response = input("> ").lower()
+#     if user_response == 'start':
+#         if last_response == user_response:
+#             print("car has already started!")
+#         else:
+#             print("Car started... Ready to go!")
+#         last_response = user_response
+#     elif user_response == 'stop':
+#         if last_response == user_response:
+#             print("car has stopped!")
+#         else:
+#             print('car stopped.')
+#         last_response = user_response
+#     elif user_response == 'quit':
+#         break
+#     else:
+#         print("I don't understand that..")
+    
+    
+#? for loops
+# for item in 'Python':
+#     print(item)
+# for item in ['Mosh', "joshn", 'Sarah']:
+#     print(item)
+# for item in range(0,100):
+#     print(item)
+
+#! exercise:
+# prices = [10, 20, 40]
+# sum = 0
+# for price in prices:
+#     sum += price
+# print(f"your cart has ${sum} worth of items")
+
+#? nested loops
+# for x in range(4):
+#     for y in range(3):
+#         print(f'({x}, {y})')
+
+#! exercise:
+# numbers = [5, 2, 5, 2, 2]
+# # for x in numbers:
+# #     y = 'x' * x
+# #     print(y)
+
+# for x in numbers:
+#     x_in_each_row = ""
+#     for y in range(x):
+#         x_in_each_row += "x"
+#     print(x_in_each_row)
+
+#! exercise to find the largest num in a list
+# num_list = [ 2, 4, 1, 5, 34, 0, 2]
+# large_num = num_list[0]
+# for num in num_list:
+#     if num > large_num:
+#         large_num = num
+# print(f"the largest number in the list is {large_num}")
+
+#? 2D list
+# matrix = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]
+# for row in matrix:
+#     for item in row:
+#         print(item)
+
+#? list methods
+# numbers = [5, 3, 4, 6, 4]
+# numbers2 = numbers.copy()
+# numbers.append(10)
+# numbers.insert(2, 99)
+# numbers.remove(5)
+# numbers.pop()
+# print(numbers.index(99))
+# print(5 in numbers)
+# print(numbers.count(4))
+# numbers.sort()
+# numbers.reverse()
+# print(numbers)
+# print(numbers2)
+
+#! remove duplicates in a list
+duplicated_list = [1, 1, 2, 3, 4, 5, 5, 3]
+duplicated_list.sort()
+last_num = duplicated_list[-1] + 1
+for num in duplicated_list:
+    if num == last_num:
+        duplicated_list.remove(num)
+    else:
+        last_num = num
+print(duplicated_list)
