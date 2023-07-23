@@ -298,12 +298,118 @@ x = 2.9
 # print(numbers2)
 
 #! remove duplicates in a list
-duplicated_list = [1, 1, 2, 3, 4, 5, 5, 3]
-duplicated_list.sort()
-last_num = duplicated_list[-1] + 1
-for num in duplicated_list:
-    if num == last_num:
-        duplicated_list.remove(num)
-    else:
-        last_num = num
-print(duplicated_list)
+# duplicated_list = [1, 1, 2, 3, 4, 5, 5, 3]
+# duplicated_list.sort()
+# last_num = duplicated_list[-1] + 1
+# for num in duplicated_list:
+#     if num == last_num:
+#         duplicated_list.remove(num)
+#     else:
+#         last_num = num
+# print(duplicated_list)
+
+#?tuple -immutatble 
+# numbers = (1, 2, 3)
+
+
+#? unpacking
+# coordinates = (1, 2, 3)
+# x, y, z = coordinates
+# print(x, y, z)
+
+#? dictionary
+# customer = {
+#     "name": "John Smith",
+#     "age": 30,
+#     "is_verified": True
+# }
+
+# customer["name"] = "Jack Smith"
+# print(customer["name"])
+# print(customer.get('birthday', "Jan 1"))
+# customer["status"] = "single"
+# print(customer)
+
+#! exercise
+# number_book = {
+#     1: "One",
+#     2: "Two",
+#     3: "Three",
+#     4: "Four",
+#     5: "Five",
+#     6: "Six",
+#     7: "Seven",
+#     8: "Eight",
+#     9: "Nine",
+#     0: "Zero"
+# }
+
+# phone = '1245'
+# phone_in_num = ""
+# for num in phone:
+#     for num_in_book in number_book:
+#         if int(num)== int(num_in_book):
+#             phone_in_num += number_book[num_in_book]
+#             phone_in_num += " "
+            
+# print(phone_in_num)
+
+#? split method
+# message = input(">")
+# words = message.split(" ")
+# emojis = {
+#     ":)": "😄",
+#     ":/": "😒",
+#     ":(": "🙁"
+# }
+# output = ""
+# for word in words: 
+#     output += emojis.get(word, word) + ' '
+    
+# print(output)
+
+#? function 
+# def greet_user(first_name, last_name):
+#     print(f"Hi {first_name} {last_name}, this is a function")
+# greet_user("John", "Smith")
+
+#? keyword parameter:
+# greet_user(last_name="KG", first_name="Jonny")
+
+#?return a statement
+# def square(number):
+#     return number * number
+# print(square(3))
+
+#! rewrite the emoji into a function
+
+# def emoji(message):
+#     words = message.split(" ")
+#     output = ""
+#     emojis = {
+#     ":)": "😄",
+#     ":/": "😒",
+#     ":(": "🙁"
+# }
+#     for word in words:
+#         output += emojis.get(word, word) + " "
+#     return output
+    
+# message = input(">")
+# print(emoji(message))
+
+#? exception:
+# try:
+#     age = int(input('Age: '))
+#     income = 2000
+#     risk = income / age
+#     print(age)
+# except ValueError:
+#     print("invalid value")
+# except ZeroDivisionError:
+#     print("age can not be zero")
+    
+
+
+    
+    
